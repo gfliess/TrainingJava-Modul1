@@ -22,15 +22,6 @@ public class Order extends ArrayList<OrderLine> {
 			sum += line.getProduct().getPrize()* line.getAmount() ;
 		}
 		
-		if(sum > 10)
-		{
-			return sum;
-		}
-		else
-		{
-			sum = sum + 5;
-		}
-		
 		return sum;
 	}
 
